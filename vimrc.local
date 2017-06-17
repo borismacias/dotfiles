@@ -1,0 +1,11 @@
+noremap <Leader>w :update<CR>
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:rspec_command = "call VtrSendCommand('bundle exec rspec {spec}')"
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+map <C-n> :NERDTreeToggle<CR>
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =

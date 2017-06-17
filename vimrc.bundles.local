@@ -1,0 +1,6 @@
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdtree'
+Plug 'ngmy/vim-rubocop'
+Plug 'christoomey/vim-tmux-runner'
+Plug 'thoughtbot/vim-rspec'
+Plug 'christoomey/vim-tmux-navigator'
