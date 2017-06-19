@@ -1,3 +1,5 @@
+Plug 'mileszs/ack.vim'
+Plug 'kagux/vim-rubocop-autocorrect'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'ngmy/vim-rubocop'
