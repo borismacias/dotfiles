@@ -17,3 +17,4 @@ autocmd VimResized * :wincmd =
 let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop -a<CR>
 noremap % v%
+

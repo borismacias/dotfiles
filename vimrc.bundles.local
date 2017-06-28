@@ -1,4 +1,7 @@
+Plug 'wincent/ferret'
 Plug 'mileszs/ack.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'bling/vim-airline'
 Plug 'kagux/vim-rubocop-autocorrect'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
