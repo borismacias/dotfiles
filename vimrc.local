@@ -1,3 +1,7 @@
+nnoremap tl :tabnext<CR>
+nnoremap th :tabprev<CR>
+nnoremap tn :tabnew<CR>
+
 set wildmenu
 " Don't offer to open certain files/directories
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
@@ -11,10 +15,14 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeTabsToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 let g:vimrubocop_keymap = 0
 nmap <Leader>r :RuboCop -a<CR>
 noremap % v%
 
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
