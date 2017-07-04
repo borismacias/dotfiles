@@ -15,7 +15,7 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-map <C-n> :NERDTreeTabsToggle<CR>
+nmap <C-n> :NERDTreeTabsToggle<CR>
 " map <C-n> :NERDTreeToggle<CR>
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
@@ -26,3 +26,11 @@ noremap % v%
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+
+let g:multi_cursor_start_key='<C-m>'
+let g:multi_cursor_start_word_key='g<C-m>'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+set runtimepath+=~/dotfiles-local/snippets
+let g:UltiSnipsSnippetsDir = "~/dotfiles-local/snippets/UltiSnips"
