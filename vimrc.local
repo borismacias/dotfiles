@@ -2,7 +2,13 @@ nnoremap tl :tabnext<CR>
 nnoremap th :tabprev<CR>
 nnoremap tn :tabnew<CR>
 
+filetype plugin indent on
+syntax on
+let anyfold_activate=1
+set foldlevel=99
+
 set wildmenu
+set ignorecase
 " Don't offer to open certain files/directories
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
 set wildignore+=*.pdf,*.psd
@@ -15,8 +21,7 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-nmap <C-n> :NERDTreeTabsToggle<CR>
-" map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 let g:vimrubocop_keymap = 0
@@ -29,8 +34,8 @@ map g/ <Plug>(incsearch-stay)
 
 let g:multi_cursor_start_key='<C-m>'
 let g:multi_cursor_start_word_key='g<C-m>'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-set runtimepath+=~/dotfiles-local/snippets
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="u<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="u<c-h>"
+set runtimepath+=~/dotfiles-local/UltiSnips
 let g:UltiSnipsSnippetsDir = "~/dotfiles-local/snippets/UltiSnips"
