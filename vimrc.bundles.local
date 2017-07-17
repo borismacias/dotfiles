@@ -1,3 +1,5 @@
+Plug 'airblade/vim-gitgutter'
+Plug 'pangloss/vim-javascript'
 Plug 'pseewald/vim-anyfold'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Trevoke/ultisnips-rspec'
